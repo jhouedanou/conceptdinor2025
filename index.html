@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Concours Photo Dinor - Stratégies Marketing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -12,7 +15,7 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Rubik', sans-serif;
             line-height: 1.6;
             color: #333;
             overflow-x: hidden;
@@ -417,6 +420,36 @@
             color: var(--dinor-gold);
         }
 
+        .learn-more-btn {
+            background: transparent;
+            border: 2px solid var(--dinor-red);
+            color: var(--dinor-red);
+            padding: 12px 25px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 15px;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        .learn-more-btn:hover {
+            background: var(--dinor-red);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .learn-more-btn.concept2 {
+            border-color: var(--dinor-gold);
+            color: var(--dinor-gold);
+        }
+
+        .learn-more-btn.concept2:hover {
+            background: var(--dinor-gold);
+            color: white;
+        }
+
         /* Popup */
         .popup-overlay {
             position: fixed;
@@ -574,6 +607,9 @@
                     <h4>🍳 Concours de Recettes</h4>
                     <p>Partagez vos meilleures recettes préparées avec l'huile Dinor ! Photo + vidéo courte de votre plat. Montrez comment Dinor donne du goût à votre cuisine familiale.</p>
                     <p><strong>Durée :</strong> 2 semaines | <strong>Vote :</strong> Likes, commentaires, partages</p>
+                    <button type="button" class="learn-more-btn" onclick="openPopup('concept1')">
+                        Cliquer pour en savoir plus
+                    </button>
                 </div>
             </div>
             
@@ -584,7 +620,7 @@
                 <div class="concept-summary concept2">
                     <h4>💰 Rapport Qualité-Prix</h4>
                     <p>Témoignez des économies réalisées avec Dinor ! Montrez vos courses du mois et expliquez pourquoi Dinor est votre meilleur allié budget familial.</p>
-                    <p><strong>Durée :</strong> 2 semaines | <strong>Focus :</strong> Économies et qualité</p>
+                    <p><strong>Durée :</strong> 2 semaines</p>
                 </div>
             </div>
         </div>
@@ -707,7 +743,7 @@
                             <div class="feature">
                                 <div class="feature-icon">⏰</div>
                                 <div class="feature-text">
-                                    <strong>Durée :</strong> 2 semaines avec un mini-défi hebdomadaire "économie de la semaine"
+                                    <strong>Durée :</strong> 2 semaines 
                                 </div>
                             </div>
                         </div>
