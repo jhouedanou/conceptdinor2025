@@ -571,6 +571,37 @@
             height: calc(100vh - 80px);
         }
 
+        /* Section TikTok Info */
+        .tiktok-info {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
+            color: white;
+            padding: 30px 20px;
+            margin-top: 80px;
+            text-align: center;
+        }
+
+        .tiktok-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .tiktok-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--dinor-gold);
+        }
+
+        .tiktok-info p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        /* Ajuster le conteneur principal */
+        .main-container {
+            margin-top: 0;
+        }
+
         @media (max-width: 768px) {
             .main-header h2 {
                 font-size: 1.4rem;
@@ -581,6 +612,18 @@
             .concept-counter {
                 font-size: 0.9rem;
                 padding: 6px 12px;
+            }
+
+            .tiktok-info {
+                padding: 20px 15px;
+            }
+
+            .tiktok-info h3 {
+                font-size: 1.3rem;
+            }
+
+            .tiktok-info p {
+                font-size: 1rem;
             }
         }
     </style>
@@ -594,6 +637,7 @@
         </h2>
     </div>
 
+<br>
     <!-- Conteneur Principal -->
     <div class="main-container">
         
@@ -615,16 +659,26 @@
             
             <div class="concept-item">
                 <button type="button" class="concept-btn concept2" onclick="openPopup('concept2')">
-                    💰 Dinor Mon Combat
+                    ✨ Dinor Saveur Unique
                 </button>
                 <div class="concept-summary concept2">
-                    <h4>💰 Rapport Qualité-Prix</h4>
-                    <p>Témoignez des économies réalisées avec Dinor ! Montrez vos courses du mois et expliquez pourquoi Dinor est votre meilleur allié budget familial.</p>
-                    <p><strong>Durée :</strong> 2 semaines</p>
+                    <h4>✨ La Différence Gustative</h4>
+                    <p>Montrez comment l'huile Dinor transforme vos plats ordinaires en délices extraordinaires ! Partagez le before/after de vos recettes avec et sans Dinor.</p>
+                    <p><strong>Durée :</strong> 2 semaines | <strong>Vote :</strong> Likes, commentaires, partages</p>
+                    <button type="button" class="learn-more-btn concept2" onclick="openPopup('concept2')">
+                        Cliquer pour en savoir plus
+                    </button>
                 </div>
             </div>
         </div>
-        
+            <!-- Info TikTok -->
+    <div class="tiktok-info">
+        <div class="tiktok-container">
+            <h3>📱 Format "TikTok/Youtube shorts/Quibi" pour Engagement Viral</h3>
+            <p>Toutes les vidéos seront au format vertical 9:16 pour maximiser la viralité. Le scroll vers le bas permet de faire défiler automatiquement la vidéo suivante, créant un effet d'engagement continu !</p>
+        </div>
+    </div>
+
     </div>
 
     <!-- Popup Concept 1 -->
@@ -645,7 +699,13 @@
                             <div class="feature">
                                 <div class="feature-icon">📸</div>
                                 <div class="feature-text">
-                                    <strong>Ce qu'il faut faire :</strong> Photo de votre plat préparé avec huile Dinor + petite vidéo de 15 secondes maximum
+                                    <strong>Ce qu'il faut faire :</strong> Photo de votre plat préparé avec huile Dinor + petite vidéo de 2 minutes maximum
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">📱</div>
+                                <div class="feature-text">
+                                    <strong>Format requis :</strong> Vidéo TikTok verticale de 2 minutes maximum montrant la transformation d'ingrédients de cuisine locaux en plats avec l'huile Dinor. L'utilisateur pourra envoyer un lien tiktok ou youtube shorts
                                 </div>
                             </div>
                             <div class="feature">
@@ -717,59 +777,70 @@
         <div class="popup-content">
             <button type="button" class="popup-close" onclick="closePopup('concept2')">×</button>
             <div class="slide-header concept2">
-                <h1>💰 Dinor Mon Combat</h1>
-                <p class="subtitle">Le Meilleur Rapport Qualité-Prix</p>
+                <h1>✨ Dinor , le goût de la différence</h1>
+                <p class="subtitle">L'huile qui Change Tout</p>
             </div>
             <div class="slide-content concept2">
                     <div class="concept-card concept2 fadeIn">
                         <div class="card-header concept2">
-                            <h3>🛒 Mon Allié Courses</h3>
-                            <p class="tagline">"Dinor, mon allié courses"</p>
+                            <h3>🍽️ Le Goût de la Différence</h3>
+                            <p class="tagline">"Avec Dinor, mes plats ont une autre saveur"</p>
                         </div>
                         <div class="card-content">
                             <div class="feature">
                                 <div class="feature-icon">📱</div>
                                 <div class="feature-text">
-                                    <strong>Durée du concours :</strong> 2 semaines. 1 semaine de publication + 1 semaine de vote
+                                    <strong>Format requis :</strong> Vidéo TikTok verticale (9:16) de 2 minutes maximum montrant la transformation
                                 </div>
                             </div>
                             <div class="feature">
-                                <div class="feature-icon">💡</div>
+                                <div class="feature-icon">⚗️</div>
                                 <div class="feature-text">
-                                    <strong>Témoignage requis :</strong> Expliquer en quelques mots pourquoi Dinor = meilleur rapport qualité-prix
+                                    <strong>Concept :</strong> Montrez les étapes de préparation d'un plat avec huile Dinor
                                 </div>
                             </div>
-                        
                             <div class="feature">
-                                <div class="feature-icon">⏰</div>
+                                <div class="feature-icon">👅</div>
                                 <div class="feature-text">
-                                    <strong>Durée :</strong> 2 semaines 
+                                    <strong>Test gustatif :</strong> Filmez les réactions de dégustation !! 
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">#</div>
+                                <div class="feature-text">
+                                    <strong>Hashtags :</strong> #DinorSaveurUnique #GoûtDeLaDifférence #DinorTransforme
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">⏱️</div>
+                                <div class="feature-text">
+                                    <strong>Durée :</strong> 2 semaines - 1 semaine publication + 1 semaine vote
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="vote-system">
-                        <h4>🎯 Comment Participer</h4>
-                        <p style="font-size: 1.1rem; margin-bottom: 20px;">Montrez comment Dinor vous aide à mieux gérer votre budget familial !</p>
+                        <h4>🎬 Format TikTok Viral</h4>
+                        <p style="font-size: 1.1rem; margin-bottom: 20px;">Vidéos courtes et engageantes pour maximiser la viralité ! Le scroll vers le bas fait défiler les vidéos.</p>
                          <div class="vote-info">
                             <div class="vote-item">
-                                <strong>👍 Likes</strong><br>
-                                = 1 point
+                                <strong>📱 Vertical</strong><br>
+                                Format 9:16 obligatoire
                             </div>
                             <div class="vote-item">
-                                <strong>💬 Commentaires</strong><br>
-                                = 2 points
+                                <strong>⚡ Dynamique</strong><br>
+                                Montage rapide et accrocheur
                             </div>
                             <div class="vote-item">
-                                <strong>↗️ Partages</strong><br>
-                                = 3 points
+                                <strong>👁️ Visuel</strong><br>
+                                Différence visible immédiatement
                             </div>
                         </div>
                     </div>
 
                     <div class="prix-section">
-                        <h3>🏆 Récompenses</h3>
+                        <h3>🏆 Récompenses Saveur</h3>
                         <div class="prix-grid">
                             <div class="prix-item">
                                 <div class="prix-icon">🥈</div>
@@ -779,7 +850,7 @@
                             <div class="prix-item">
                                 <div class="prix-icon">🥈</div>
                                 <div class="prix-title">2ème Place</div>
-                                <div class="prix-desc">Bon d'achat Prosuma 50 000 FCFA </div>
+                                <div class="prix-desc">Bon d'achat Prosuma 50 000 FCFA</div>
                             </div>
                             <div class="prix-item">
                                 <div class="prix-icon">🥉</div>
